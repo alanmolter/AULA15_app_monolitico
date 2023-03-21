@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index"
   },
-  "author": "Pedro Motta",
+  "author": "ALAN MOLTER",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
