@@ -1,0 +1,14 @@
+Desenvolvendo uma aplicaçao com arquitetura monolitica (apenas um front end vai se conectar ao back end)
+
+Requisicoes e respostas do servidor (padrao web) se comunicam atravez do protocolo http
+
+Foram aplicados os conhecimentos sobre as tecnologias inseridas na linguagem javascript utilizando Node.js -> (modulos e commons do node.js)
+
+npm init
+npm install express
+npm install nodemon
+npm install ejs
+npm install dotenv
+npm install mongoose@6.10.0 
+
+npm i se nao tiver o node modules
