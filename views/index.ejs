@@ -11,6 +11,23 @@
 </head>
 
 <body>
+
+    <% if(message !="") { %>
+
+
+            <section class="message message-<%= type  %>">
+                <p>
+                    <%= message  %>
+                </p>
+
+                <span id="close-message">
+                    <i class="bi bi-x"></i>
+                </span>
+            </section>
+
+
+    <% } %>
+
     <!--<h1>Olá a todos!!</h1>-->
     <header>
         <% if(task==null) { %>
@@ -28,11 +45,24 @@
     <section id="tasks">
         <ul>
             <% taskList.forEach((task)=> { %>
-                <li>
-                    <%= task.task %> | <%= task.date.toLocaleDateString('pt-BR') %>
-                            <a href="/getById/<%= task._id %>/update "><i class="bi bi-pencil-square"></i></a>
-                            <a href="/getById/<%= task._id %>/delete"><i class="bi bi-trash"></i></a>
-                </li>
+                    <li class="check-<%= task.check %>">
+                        <div>
+
+                            <a href="/check/<%= task._id  %>" class="check-<%= task.check  %>">
+
+                                <%= task.task %> 
+                                
+                            </a>
+
+                            <span>
+                                Criado em :  <%= task.date.toLocaleDateString('pt-BR') %>
+                            </span>
+
+                        </div>
+                        
+                                <a href="/getById/<%= task._id %>/update "><i class="bi bi-pencil-square"></i></a>
+                                <a href="/getById/<%= task._id %>/delete"><i class="bi bi-trash"></i></a>
+                    </li>
                 <% } )%>
         </ul>
     </section>
