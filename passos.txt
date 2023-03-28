@@ -12,3 +12,13 @@ npm install dotenv
 npm install mongoose@6.10.0 
 
 npm i se nao tiver o node modules
+
+
+
+
+===============Tarefas para atualizar o sistema de tarefas================================
+
+1- precisa que o usuario receba mensagem para confirmaçao do crud -> atualizaçao com sucesso, deleçao com sucesso, inserçao com sucesso (camada do front)
+
+2- gravaçao se a tarefa foi atualizada no banco (camada do back)
+
