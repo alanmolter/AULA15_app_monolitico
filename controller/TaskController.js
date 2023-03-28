@@ -147,7 +147,7 @@ const deleteOneTask = async (req, res) => {
 
 const taskCheck = async (req, res) => {
     try {
-            const task = await task.findOne({_id: req.params.id});
+            const task = await Task.findOne({_id: req.params.id});
             
             if(task.check){
                 task.check = false;
